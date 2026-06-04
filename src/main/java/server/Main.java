@@ -65,7 +65,8 @@ public class Main {
 
             output.writeUTF(gson.toJson(response));
 
-        } catch (IOException ignored) {
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
